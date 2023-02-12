@@ -1,20 +1,56 @@
 body{
-    background-color: gold;
+    background-color: blanchedalmond;
 }
 
-section {
+h1{
+    text-align: center;
     border-style: dashed;
     border-width: 1px;
 }
 
-section#game_title h1{
-    text-align: center;
-    font-size: 100px;
-    font-family: 'Aclonica';
-    color:blueviolet;
+section div {
+    border-style: dashed;
+    border-width: 1px;
 }
 
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: dashed;
+    border-width: 1px;
+    width: 30%;
+}
+
+section#game_title h1{
+    font-size: 100px;
+    font-family: 'Aclonica';
+    color:#722F37;
+}
+
+section#game_body{
+    height: 75vh;
+    background-color:gold;
+}
+
+.player_div{
+    height: 100%;
+    background-color: white;
+}
+
+.player_div h1{
+    height: 20%;
+}
+
+
+
 @media (min-width: 500px) { 
+    section#game_title h1{
+        font-size: 80px;
+    }
+}
+
+@media (min-width: 544px) { 
     section#game_title h1{
         font-size: 90px;
     }
