@@ -28,6 +28,12 @@ section#game_title h1{
     color:#722F37;
 }
 
+#result h1{
+    font-family: 'Aclonica';
+    color:#722F37;
+    font-size: 50px;
+}
+
 section#game_body{
     height: 75vh;
     background-color:gold;
