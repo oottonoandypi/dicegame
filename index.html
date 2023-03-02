@@ -1,35 +1,40 @@
 <!DOCTYPE html>
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Shadows+Into+Light&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
     <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-    <section id="game_title">
-        <h1>Let's Play!</h1>
-    </section>
-    <section class="row" id="game_body">
-        <!-- player one-->
-        <div class="col-md-5 col-sm-12 player_div" id="player_one">
-            <h2 class="player-name">Player One</h1>
-            <div style="height: 80%"><img class="dice" src="img/dice1.png" alt="Dice One"></div>
-        </div>
+    <div id="bk_container">
+        <section id="game_title">
+            <h1>Let's Play a Dice Game!</h1>
+        </section>
+        <button id="roll_button" onclick="roll_dice()">Roll Again!</button>
 
-        <!-- result -->
-        <div style="height:100%; position: relative;" class="col-md-2 col-sm-12" id="result">
-            <h1 style="position:absolute; top: 30%;">V.S.</h1>
-        </div>
+        <section id="game_body">
+            <div class="col-lg-3 col-4 spacing"></div>
+            <!-- player one-->
+            <div class="col-lg-3 col-4 player-div" id="player_one">
+                <h2 class="player-name">Player One</h2>
+                <div><h1 class="player-result"></h1></div>
+                <div class="diceimg-container"><img class="dice" src="img/dice1.png" alt="Dice=One"></div>
+            </div>
+            
+            <!-- player two-->
+            <div class="col-lg-3 col-4 player-div" id="player_two">
+                <h2 class="player-name">Player Two</h2>
+                <div><h1 class="player-result"></h1></div>
+                <div class="diceimg-container"><img class="dice" src="img/dice1.png" alt="Dice=One"></div>
+            </div>
+            <div class="col-lg-3 col-4 spacing"></div>
+        </section>
 
-        <!-- player two-->
-        <div class="col-md-5 col-sm-12 player_div" id="player_two">
-            <h2 class="player-name">Player Two</h1>
-            <div style="height: 80%"><img class="dice" src="img/dice1.png" alt="Dice One"></div>
-        </div>
-
-    </section>
-    <section id="game_developer">
-
-    </section>
-
+        <section id="footer">
+            <h4>Developed By <em>oottonoandypi@gmail.com</em></h4>
+        </section>
+    </duv>
     <script src="js/index.js"></script>
 </body>

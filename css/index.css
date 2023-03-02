@@ -1,75 +1,142 @@
 body{
-    background-color: blanchedalmond;
+    background-color: rgb(247, 222, 184);
+    text-align: center; 
+    position:relative;
+    height: 97vh;
 }
 
-h1{
+#bk_container{
+    height:100%;
+    background-image: url(../img/bk_img.png);
+    background-position: cover;
+    background-size: 100%;
+}
+
+div, h1, h2{
+    /* border-style: dashed;
+    border-width: 1px;*/
     text-align: center;
-    border-style: dashed;
-    border-width: 1px;
 }
 
-section div {
-    border-style: dashed;
-    border-width: 1px;
-}
-
-img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border-style: dashed;
-    border-width: 1px;
-    width: 30%;
-}
-
-section#game_title h1{
-    font-size: 100px;
-    font-family: 'Aclonica';
-    color:#ac2938;
-}
-
-#result h1{
-    font-family: 'Aclonica';
-    color:#722F37;
-    font-size: 50px;
-}
-
-section#game_body{
-    height: 75vh;
-    background-color:gold;
-}
-
-.player_div{
-    height: 100%;
-    background-color: white;
-}
-
-.player_div h1{
+section#game_title{
+    font-family: 'Pacifico', cursive;
+    /* color:#ac2938; */
+    /* color: #384D63; */
     height: 20%;
 }
 
-#player_one .player-name{
+#roll_button{
+    background-color: transparent;
+    border: 2px;
+   /* border-style: dotted;
+    border-color: #384D63; */
+    padding: 10px;
+    text-align: center;
+    height: 50px;
+    margin: auto;
+    font-size: 3rem;
+    color:#ac2938;
+    font-family: 'Pacifico', cursive;
+    text-decoration: underline;
+    text-decoration-style: wavy;
+}
+
+#roll_button:hover {
+    text-decoration-style: solid;
+}
+
+section#game_body{
+    /* background-color:gold; */
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: bold;
+    height: 65%;
+    padding-top: 30px;
+}
+
+.player-div{
+    height: 100%;
+    /* background-color: white; */
+}
+
+.player-name{
+    text-decoration: underline;
+    text-decoration-style: dotted;
+}
+
+.lost {
     color: rgb(36, 36, 163);
 }
 
-#player_two .player-name{
+.won{
     color: rgb(16, 125, 45);
 }
 
+.tie{
+    color: black;
+}
+
+.diceimg-container img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /*border-style: dashed;
+    border-width: 1px;*/
+}
+
+#footer{
+    margin-top:30px;
+    color:gray;
+}
+#footer em{
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 1.7em;
+}
+
 @media (min-width: 500px) { 
-    section#game_title h1{
-        font-size: 80px;
+    h1{
+        font-size: 7rem;
+    }
+    .spacing {
+        height: 0%;
+    }
+    .diceimg-container img{
+        width: 100px;
+    }
+
+    .player-div{
+        height: 50%;
     }
 }
 
-@media (min-width: 544px) { 
-    section#game_title h1{
-        font-size: 90px;
+/* @media (min-width: 576px) {
+    h1{
+        font-size: 10rem;
     }
 }
 
 @media (min-width: 768px) {
-    section#game_title h1{
-        font-size: 120px;
+    h1{
+        font-size: 11rem;
+    }
+}
+
+@media (min-width: 992px) {
+    h1{
+        font-size: 11.5rem;
+    }
+} */
+
+@media (min-width: 1200px) {
+    h1{
+        font-size: 10rem;
+    }
+    .spacing {
+        height: 100%;
+    }
+    .diceimg-container img{
+        width: 150px;
+    }
+    .player-div{
+        height: 100%;
     }
 }
