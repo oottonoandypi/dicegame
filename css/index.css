@@ -86,10 +86,7 @@ section#game_body{
 #footer{
     margin-top:30px;
     color:gray;
-}
-#footer em{
-    font-family: 'Shadows Into Light', cursive;
-    font-size: 1.7em;
+    /* font-family: 'Shadows Into Light', cursive; */
 }
 
 @media (min-width: 500px) { 
