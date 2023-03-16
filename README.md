@@ -8,5 +8,3 @@ The rule is simple, just as you may already knew: <br />
 Most importantly, <br />Have fun playing!</br>
 
 p.s. Hope you won that last piece of chicken nugget!! Mmmmm..
-
-Developed by oottonoandypi@gmail.com
